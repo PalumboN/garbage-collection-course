@@ -1,2 +1,37 @@
-# garbage-collection-course
+# Garbage Collectors (and the application's allocation patterns)
+
 Course about Garbage Collection using the PharoVM for CERCIRAS - Riga '23
+
+## Modules
+
+- **Day 1: Introduction to Pharo and Object-Oriented Programming**
+This lecture will provide a basic understanding of object-oriented programming (object, message, polymorphism, block closures) using Pharo. We will present the syntax of the language and explore the Pharo environment. We will use the tools (testing, inspectors, profilers) with simple programs. We expect the required software to already be installed in the assistant’s machines. Missing installations will be performed if needed.
+- **Day 2: Introduction to Garbage Collector**
+The lecture will introduce Garbage Collectors (GC) in the context of object-oriented programs. We will present the main contribution of GCs and some known algorithms. We will describe how the GC is implemented inside the Pharo Virtual Machine and the exposed parameters for tuning it on running applications.
+- **Day 3: Analysis of application’s allocation patterns**
+We will profile the Garbage Collector events for different application executions. We will analyse profile data based on different charts for understanding how the GC interacts with running applications. We will identify pathological cases, and search the possible causes of the performance degradation. We will tune the GC to achieve a better application performance. This lecture will be performed by the instructor and assistants together.
+- **Day 4: Profiling Garbage Collector events on running applications**
+Assistants will select one application to analyse the impact of the GC on its performance. For pathological cases, they will analyse the data to identify possible causes of performance degradation and how to tune the GC for solving them. They will identify the allocation pattern and understand why the default value in the GC parameters performs efficiently.
+
+## References
+1. L. P. Deutsch, D. G. Bobrow, An efficient, incremental garbage collector, CACM 19 (1976) 522–526.
+1. R. Jones, A. Hosking, E. Moss, The garbage collection handbook: the art of automatic memory management, CRC Press, 2016.
+1. R. Garner, The design and construction of high performance garbage collectors, Ph.D. thesis, The Australian National University, 2011.
+1. S. M. Blackburn, P. Cheng, K. S. McKinley, Oil and water? high performance garbage collection in java with mmtk, in: Proceedings. 26th International Conference on Software Engineering, 2004, pp. 137–146. doi:10.1109/ICSE.2004.1317436.
+1. M. Hertz, E. D. Berger, Quantifying the performance of garbage collection vs. explicit memory management, in: Proceedings of the 20th annual ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications, 2005, pp. 313–326.
+1. S. Jayasena, M. Fernando, T. Rusira, C. Perera, C. Philips, Auto-tuning the java virtual machine, in: 2015 IEEE International Parallel and Distributed Processing Symposium Workshop, IEEE, 2015, pp. 1261–1270.
+1. N. Neu, Automatic application performance improvements through VM parameter mod- ification after runtime behavior analysis, Ph.D. thesis, University of New Brunswick, 2014.
+1. P. Lengauer, H. Mössenböck, The taming of the shrew: Increasing performance by auto- matic parameter tuning for java garbage collectors, in: Proceedings of the 5th ACM/SPEC international conference on Performance engineering, 2014, pp. 111–122.
+1. G. Vijayakumar, R. Bharathi, Predicting jvm parameters for performance tuning using different regression algorithms, in: 2022 Fourth International Conference on Emerging Research in Electronics, Computer Science and Technology (ICERECT), IEEE, 2022, pp. 1–8.
+1. E. Miranda, The cog smalltalk virtual machine, in: Proceedings of VMIL 2011, 2011.
+1. J.Singer,G.Kovoor,G.Brown,M.Luján,Garbagecollectionauto-tuningforjavamapreduce on multi-cores, ACM SIGPLAN Notices 46 (2011) 109–118.
+1. D. Ungar, Generation scavenging: A non-disruptive high performance storage reclamation algorithm, ACM SIGPLAN Notices 19 (1984) 157–167. doi:10.1145/390011.808261.
+1. H.Lieberman,C.Hewitt,ARealTimeGarbageCollectorBasedontheLifetimesofObjects, AI memo no 569, MIT, 1981.
+1. D. Ungar, F. Jackson, Tenuring policies for generation-based storage reclamation, in: Proceedings OOPSLA ’88, volume 23, 1988, pp. 1–17.
+1. P. Tesone, G. Polito, S. Ducasse, Profiling Code Cache Behaviour via Events, in: MPLR’21, Münster, Germany, 2021. URL: https://hal.inria.fr/hal-03332040. doi:10.1145/3475738.3480720.
+1. S. Kaleba, C. Béra, A. Bergel, S. Ducasse, A detailed vm profiler for the cog vm, in: International Workshop on Smalltalk Technology IWST’17, Maribor, Slovenia, 2017. URL: https://hal.inria.fr/hal-01585754.
+1. J. Singer, G. Brown, I. Watson, J. Cavazos, Intelligent selection of application-specific garbage collectors, in: Proceedings of the 6th international symposium on Memory management, 2007, pp. 91–102.
+1. P. Cheng, R. Harper, P. Lee, Generational stack collection and profile-driven pretenuring, in: Proceedings of the ACM SIGPLAN 1998 conference on Programming language design and implementation, 1998, pp. 162–173. 1. T. L. Harris, Dynamic adaptive pre-tenuring, in: Proceedings of the 2nd International Symposium on Memory Management, ISMM ’00, Association for Computing Machinery, New York, NY, USA, 2000, pp. 127–136. URL: https://doi.org/10.1145/362422.362476. doi:10. 1145/362422.362476.
+1. M. Jump, S. M. Blackburn, K. S. McKinley, Dynamic object sampling for pretenuring, in: Proceedings of the 4th international symposium on Memory management, 2004, pp. 152–162.
+1. D. Buytaert, K. Venstermans, L. Eeckhout, K. De Bosschere, Garbage collection hints, in: High Performance Embedded Architectures and Compilers: First International Conference, HiPEAC 2005, Barcelona, Spain, November 17-18, 2005. Proceedings 1, Springer, 2005, pp. 233–248.
+1. V. P. Araya, A. Bergel, D. Cassou, S. Ducasse, J. Laval, Agile visualization with Roassal, in: Deep Into Pharo, Square Bracket Associates, 2013, pp. 209–239.
