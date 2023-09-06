@@ -19,19 +19,19 @@ Assistants will select one application to analyse the impact of the GC on its pe
 
 ## References
 1. L. P. Deutsch, D. G. Bobrow, An efficient, incremental garbage collector, CACM 19 (1976) 522–526.
+1. D. Ungar, Generation scavenging: A non-disruptive high performance storage reclamation algorithm, ACM SIGPLAN Notices 19 (1984) 157–167. doi:10.1145/390011.808261.
+1. D. Ungar, F. Jackson, Tenuring policies for generation-based storage reclamation, in: Proceedings OOPSLA ’88, volume 23, 1988, pp. 1–17.
+1. M. Hertz, E. D. Berger, Quantifying the performance of garbage collection vs. explicit memory management, in: Proceedings of the 20th annual ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications, 2005, pp. 313–326.
 1. R. Jones, A. Hosking, E. Moss, The garbage collection handbook: the art of automatic memory management, CRC Press, 2016.
 1. R. Garner, The design and construction of high performance garbage collectors, Ph.D. thesis, The Australian National University, 2011.
 1. S. M. Blackburn, P. Cheng, K. S. McKinley, Oil and water? high performance garbage collection in java with mmtk, in: Proceedings. 26th International Conference on Software Engineering, 2004, pp. 137–146. doi:10.1109/ICSE.2004.1317436.
-1. M. Hertz, E. D. Berger, Quantifying the performance of garbage collection vs. explicit memory management, in: Proceedings of the 20th annual ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications, 2005, pp. 313–326.
 1. S. Jayasena, M. Fernando, T. Rusira, C. Perera, C. Philips, Auto-tuning the java virtual machine, in: 2015 IEEE International Parallel and Distributed Processing Symposium Workshop, IEEE, 2015, pp. 1261–1270.
-1. N. Neu, Automatic application performance improvements through VM parameter mod- ification after runtime behavior analysis, Ph.D. thesis, University of New Brunswick, 2014.
-1. P. Lengauer, H. Mössenböck, The taming of the shrew: Increasing performance by auto- matic parameter tuning for java garbage collectors, in: Proceedings of the 5th ACM/SPEC international conference on Performance engineering, 2014, pp. 111–122.
+1. N. Neu, Automatic application performance improvements through VM parameter modification after runtime behavior analysis, Ph.D. thesis, University of New Brunswick, 2014.
+1. P. Lengauer, H. Mössenböck, The taming of the shrew: Increasing performance by automatic parameter tuning for java garbage collectors, in: Proceedings of the 5th ACM/SPEC international conference on Performance engineering, 2014, pp. 111–122.
 1. G. Vijayakumar, R. Bharathi, Predicting jvm parameters for performance tuning using different regression algorithms, in: 2022 Fourth International Conference on Emerging Research in Electronics, Computer Science and Technology (ICERECT), IEEE, 2022, pp. 1–8.
 1. E. Miranda, The cog smalltalk virtual machine, in: Proceedings of VMIL 2011, 2011.
 1. J.Singer,G.Kovoor,G.Brown,M.Luján,Garbagecollectionauto-tuningforjavamapreduce on multi-cores, ACM SIGPLAN Notices 46 (2011) 109–118.
-1. D. Ungar, Generation scavenging: A non-disruptive high performance storage reclamation algorithm, ACM SIGPLAN Notices 19 (1984) 157–167. doi:10.1145/390011.808261.
 1. H.Lieberman,C.Hewitt,ARealTimeGarbageCollectorBasedontheLifetimesofObjects, AI memo no 569, MIT, 1981.
-1. D. Ungar, F. Jackson, Tenuring policies for generation-based storage reclamation, in: Proceedings OOPSLA ’88, volume 23, 1988, pp. 1–17.
 1. P. Tesone, G. Polito, S. Ducasse, Profiling Code Cache Behaviour via Events, in: MPLR’21, Münster, Germany, 2021. URL: https://hal.inria.fr/hal-03332040. doi:10.1145/3475738.3480720.
 1. S. Kaleba, C. Béra, A. Bergel, S. Ducasse, A detailed vm profiler for the cog vm, in: International Workshop on Smalltalk Technology IWST’17, Maribor, Slovenia, 2017. URL: https://hal.inria.fr/hal-01585754.
 1. J. Singer, G. Brown, I. Watson, J. Cavazos, Intelligent selection of application-specific garbage collectors, in: Proceedings of the 6th international symposium on Memory management, 2007, pp. 91–102.
