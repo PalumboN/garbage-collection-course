@@ -1,5 +1,9 @@
 1. Download the VM based on your OS and architecture.
 
+> If you are using Mac, then you need to run this command to the VM file `Pharo.app`
+> 
+> `xattr -r -d com.apple.quarantine Pharo.app`
+
 2. Open a terminal and run the VM passing an image file
 
 ```bash
