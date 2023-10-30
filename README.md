@@ -1,23 +1,34 @@
-# Garbage Collectors (and the application's allocation patterns)
+# Understanding Garbage Collectors in Object-Oriented Programming (application's allocation patterns study)
 
-Course about Garbage Collection using the PharoVM for CERCIRAS - Riga '23
+Course about Garbage Collection using the Pharo for CERCIRAS - dicated at Riga '23.
 
 ## Outline
 Automatic memory management is often supported by Garbage Collectors (GC). A GC deals with different programs that manipulate different data. This data must be allocated in the memory (heap), accessible when the application uses it and will be freed when is not necessary anymore (allocation pattern). GCs try to predict the allocation pattern of running applications for better performance. So, they implement parametric algorithms to adapt their complex behaviour to each specific application. There are reports about how garbage collection impacts application performance if not tuned properly, but most developers do not know how the GC works with their programs.
 In this lecture series, we introduce how Garbage Collectors work in the context of object-oriented programs. We use the Pharo language to profile the program allocations and analyse profile data. We will analyse applications with different allocation patterns and identify possible causes of performance degradation (pathological cases). We use this information for tuning GC parameters and improving the application’s performance.
 
+## Structure
+
+This course is divided into four modules. You will see a folder for each of them + a folder with “VMs for GC profiling” that contains the material for the practical part of the course.
+
+For each module, you will find:
+- A _video-lecture_ explaining the module’s topic and showing practical examples.
+- The _slides_ used in the video.
+- Some _code_ used in the video.
+- A `README.md` file with _instructions_ about the activity and complementary _bibliography_.
+
+
 ## Modules
 
-- **Day 1: Introduction to Pharo and Object-Oriented Programming**
-This lecture will provide a basic understanding of object-oriented programming (object, message, polymorphism, block closures) using Pharo. We will present the syntax of the language and explore the Pharo environment. We will use the tools (testing, inspectors, profilers) with simple programs. We expect the required software to already be installed in the assistant’s machines. Missing installations will be performed if needed.
-- **Day 2: Introduction to Garbage Collector**
-The lecture will introduce Garbage Collectors (GC) in the context of object-oriented programs. We will present the main contribution of GCs and some known algorithms. We will describe how the GC is implemented inside the Pharo Virtual Machine and the exposed parameters for tuning it on running applications.
-- **Day 3: Analysis of application’s allocation patterns**
-We will profile the Garbage Collector events for different application executions. We will analyse profile data based on different charts for understanding how the GC interacts with running applications. We will identify pathological cases, and search the possible causes of the performance degradation. We will tune the GC to achieve a better application performance. This lecture will be performed by the instructor and assistants together.
-- **Day 4: Profiling Garbage Collector events on running applications**
-Assistants will select one application to analyse the impact of the GC on its performance. For pathological cases, they will analyse the data to identify possible causes of performance degradation and how to tune the GC for solving them. They will identify the allocation pattern and understand why the default value in the GC parameters performs efficiently.
+- **[Module 1](/Module%201): Introduction to Pharo and Object-Oriented Programming**
+This lecture will provide a basic understanding of Garbage Collectors (GC) and object-oriented programming (object, references, instantiation) using Pharo. We will present the syntax of the language and explore the Pharo environment. We will some tools to write and execute simple programs.
+- **[Module 2](/Module%202): Generational Garbage Collector**
+The lecture will introduce High-Performance Garbage Collectors, particulary the Generational Garbage Collector algorithm. We will describe how the GC is implemented inside the Pharo Virtual Machine and create some programs to stress the GC in different ways.
+- **[Module 3](/Module%203): Analysis of application’s allocation patterns**
+We will profile the Garbage Collector events for different application executions. We will analyse profile data based on different charts for understanding how the GC interacts with running applications.
+- **[Module 4](/Module%204): Tuning the Garbage Collector**
+We will present a pathological allocation case study. We will use the knowledge and tools from previous lectures to identify the possible causes of performance degradation. We will tune the GC to achieve a better application performance.
 
-## References
+## Bibliography
 1. L. P. Deutsch, D. G. Bobrow, An efficient, incremental garbage collector, CACM 19 (1976) 522–526.
 1. D. Ungar, Generation scavenging: A non-disruptive high performance storage reclamation algorithm, ACM SIGPLAN Notices 19 (1984) 157–167. doi:10.1145/390011.808261.
 1. D. Ungar, F. Jackson, Tenuring policies for generation-based storage reclamation, in: Proceedings OOPSLA ’88, volume 23, 1988, pp. 1–17.
