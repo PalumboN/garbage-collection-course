@@ -1,13 +1,15 @@
 ## Analysis of application’s allocation patterns
 
-### Profile
-We will use a profile VM for getting info of the Garbage Collector events during some programs execution. 
-Then we will plot the profile data to analyse and understand how the GC interacts with our applications.
+We will profile the Garbage Collector events for different application executions. We will analyse profile data based on different charts for understanding how the GC interacts with running applications.
 
-- The charts are as you have expected? Something weird?
-- Can you identify some cause of GC overhead in the analysis?
+### Code
+- The code of the experiments are in the `GCExperiment.st` file. Just drag-and-drop the file into the Pharo world and select `Install into the image`.
+- [VMs for GC profiling](../VMs%20for%20GC%20profiling)
 
-### Pathological cases
+### Links of interest
+- Paper about GC profiling:
+- We create the charts using Roassal:
 
-- We will identify applications with pathological allocation paterns.
-- We will tune the GC to achieve a better application performance. 
+### Practice
+- Repeat the experiment using your programs.
+- Analyse the charts and compare with the produced in the video.
