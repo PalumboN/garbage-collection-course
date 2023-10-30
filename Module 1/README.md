@@ -1,33 +1,26 @@
-## Introduction to Pharo and Object-Oriented Programming
+## Introduction to Garbage Collectors and Object-Oriented Programming 
 
-### The game of strings
-We start playing a game to understand what are the fundamental metaphore behind OOP.
-For this game we need people:
-- Many objects: They know each others thru _references_ (strings). They will understand (maybe not) and send messages 
-- 1 object "director": Represented by the _teacher_
-- 1 Garbage Collector: She/He will _instanciate_ new objects if is required, and will kill the objects when they are not neccessary anymore 💀
-- The rest: Other people will control rules of the game all the time
+This lecture will provide a basic understanding of Garbage Collectors (GC) and object-oriented programming (object, references, instantiation) using Pharo. We will present the syntax of the language and explore the Pharo environment. We will some tools to write and execute simple programs.
 
-**TODO**: Make the rules - https://docs.google.com/document/d/1j7ypqE-o1QBV3UkqNmxY__PNvyFJUVbshK2nV3L_iO8/edit
+### Code
+- The code of the Swallow class in the `Example.st` file (Example package). Just drag-and-drop the file into the Pharo world and select `Install into the image`.
+<img width="661" alt="image" src="https://github.com/PalumboN/garbage-collection-course/assets/4098184/c44e40b4-c0b6-4085-8265-76792759f08d">
+- At the end, the code of the _Playground_ was
+```st
+pepita := Swallow new.
+pepita areYouTired.
+pepita fly: 50.
 
+Smalltalk garbageCollect.
+Smalltalk vm totalGCTime. “2967” “3005”
+```
 
-
-### A bit of Pharo and OOP
-This lecture will provide a basic understanding of object-oriented programming (object, message, polymorphism, block closures) using Pharo. 
-We will present the syntax of the language and explore the Pharo environment. 
-We will use the tools (testing, inspectors, profilers) with simple programs. 
-
+### Links of interest
+- Download the Pharo: https://pharo.org/download
+- Check the Pharo MOOC: https://mooc.pharo.org/
+- Books about Pharo: https://books.pharo.org/
 
 ### Practice
-
-**Download**
-
-- Download the Pharo Launcher from: https://pharo.org/download
-- Download the zip for your machine from: **TODO LINK**
-
-**LET'S CODE!**
-
-You can:
-- Follow the Pharo MOOC from: **TODO LINK**
-- Or continue with the example (adding tests, adding features, etc)
-- Or create a new program / algorithm that you want 
+- Follow `ProfStef` in the Pharo image to learn how to use the environment.
+- Extend the Swallow example (adding tests, adding features, etc).
+- Or create a new program (model) that you want.
