@@ -35,7 +35,7 @@ Smalltalk vm tenuringThreshold: 9999999999.
   - DataFrame https://github.com/PolyMathOrg/DataFrame
   - Pharo VM Tuning https://github.com/pharo-project/pharo-vm-tunning
 - Paper about the DataFrame experience (+ description of the Pharo GC parameters): https://inria.hal.science/hal-04225588v1/document
-
+- Paper about _pre-tenuring_ (complementary to this course): https://dl.acm.org/doi/pdf/10.1145/277650.277718
 
 ### Practice
 - Repeat the experiment and validate the numbers published in the paper ;)
