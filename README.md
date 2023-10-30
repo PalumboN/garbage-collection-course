@@ -10,8 +10,8 @@ In this lecture series, we introduce how Garbage Collectors work in the context 
 ## Material
 
 You can 
-- clone this repository if you know git
-- or download all the material by [clicking here](https://www.dropbox.com/scl/fi/u9lxkmgmyl10vtpjaqzm8/garbage-collection-course.zip?rlkey=tj6mz27h03taau9m44iiuezm7&dl=0).
+- **clone** this repository if you know git
+- or **download** all the material by [clicking here](https://www.dropbox.com/scl/fi/u9lxkmgmyl10vtpjaqzm8/garbage-collection-course.zip?rlkey=tj6mz27h03taau9m44iiuezm7&dl=0) (don't use the GitHub option to download the `.zip`, videos could be corrupted).
 
 This course is self-contained. All the material to follow the course is here, except the links.
 You will only need internet during the software instalation at the beggining of the course and for the last experience.
