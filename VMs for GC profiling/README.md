@@ -30,6 +30,9 @@
 
 3. A file `scavenge.log` will appear in the current directory of your terminal.
 
+> If you will run the same VM to run many program, make sure to **rename** this file at the end.
+> If not, data from different executions will be mixed into the same file.
+
 4. Download the image `P11-gc-charts` and open it (you can use the PharoLauncher for this).
 
 5. Inside the image, open a Workspace, create a file reference to your `scavenge.log` file and explore the `GCChart` class to plot some charts.
