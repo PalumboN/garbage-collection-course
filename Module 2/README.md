@@ -28,8 +28,8 @@ birds.
 ```
 
 ### Links of interest
-- Paper about Generational Garbage Collectors:
-- Book about High-Performance Garbage Collectors (complementary to this course):
+- Paper about Generational Garbage Collectors: https://www.researchgate.net/publication/220404180_An_Adaptive_Tenuring_Policy_for_Generation_Scavengers
+- Book about High-Performance Garbage Collectors (complementary to this course): https://openresearch-repository.anu.edu.au/bitstream/1885/9053/1/02WholeThesis_Garner.pdf
 
 ### Practice
 - Execute programs to stress the Garbage Collectors in different ways.
