@@ -7,8 +7,7 @@ We will profile the Garbage Collector events for different application execution
 - [VMs for GC profiling](../VMs%20for%20GC%20profiling)
 
 ### Links of interest
-- Paper about GC profiling:
-- We create the charts using Roassal:
+- We created the charts using Roassal: https://github.com/ObjectProfile/Roassal3
 
 ### Practice
 - Repeat the experiment using your programs.
