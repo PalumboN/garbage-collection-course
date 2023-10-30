@@ -5,14 +5,16 @@ This lecture will provide a basic understanding of Garbage Collectors (GC) and o
 ### Code
 - The code of the Swallow class in the `Example.st` file (Example package). Just drag-and-drop the file into the Pharo world and select `Install into the image`.
 <img width="661" alt="image" src="https://github.com/PalumboN/garbage-collection-course/assets/4098184/c44e40b4-c0b6-4085-8265-76792759f08d">
-- At the end, the code of the _Playground_ was
+
+- At the end, the code in the _Playground_ was
+
 ```st
 pepita := Swallow new.
 pepita areYouTired.
 pepita fly: 50.
 
 Smalltalk garbageCollect.
-Smalltalk vm totalGCTime. “2967” “3005”
+Smalltalk vm totalGCTime. "2967" "3005"
 ```
 
 ### Links of interest
