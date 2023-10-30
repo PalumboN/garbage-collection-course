@@ -19,7 +19,7 @@ For each module, you will find:
 
 ## Modules
 
-- **[Module 1](/Module%201): Introduction to Pharo and Object-Oriented Programming**
+- **[Module 1](/Module%201): Introduction to Garbage Collectors and Object-Oriented Programming**
 This lecture will provide a basic understanding of Garbage Collectors (GC) and object-oriented programming (object, references, instantiation) using Pharo. We will present the syntax of the language and explore the Pharo environment. We will some tools to write and execute simple programs.
 - **[Module 2](/Module%202): Generational Garbage Collector**
 The lecture will introduce High-Performance Garbage Collectors, particulary the Generational Garbage Collector algorithm. We will describe how the GC is implemented inside the Pharo Virtual Machine and create some programs to stress the GC in different ways.
