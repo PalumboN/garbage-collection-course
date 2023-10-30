@@ -14,7 +14,7 @@ For each module, you will find:
 - A _video-lecture_ explaining the module’s topic and showing practical examples.
 - The _slides_ used in the video.
 - Some _code_ used in the video.
-- A `README.md` file with _instructions_ about the activity and complementary _bibliography_.
+- A `README.md` file with _instructions_ about the activity and related links.
 
 
 ## Modules
