@@ -1,16 +1,36 @@
-## Introduction to Garbage Collector
+## Generational Garbage Collector 
 
-### Lecture
-- Introduction to Garbage Collectors (GC) in the context of object-oriented programs. 
-- We will describe how the GC is implemented inside the Pharo Virtual Machine.
+The lecture will introduce High-Performance Garbage Collectors, particulary the Generational Garbage Collector algorithm. We will describe how the GC is implemented inside the Pharo Virtual Machine and create some programs to stress the GC in different ways.
 
-### Testing
-First, we can check/create some tests in the VM code:
-- Create a graph of objects and run the GC
-- Validate died/alive objects
+### Code
+- At the end, the code in the _Playground_ was
+
+```st
+pepita := Swallow new.
+pepita areYouTired.
+pepita fly: 30.
+
+Smalltalk garbageCollect. "FullGC"
+Smalltalk garbageCollectMost. "Scavenge"
+
+Smalltalk vm totalGCTime.
+
+Smalltalk vm incrementalGCCount. "229" "233" "321" "452" "461"
+
+Smalltalk vm fullGCCount. "1" "1" "1" "2" "2" "2" "2" "2" "4"
+
+Smalltalk vm tenureCount. "72007" "72007" "72007" "72016" "72016" "145066"
+
+birds := OrderedCollection new.
+birds add: pepita.
+birds.
+1 to: 1000000 do: [ :index | birds add: Swallow new ].
+```
+
+### Links of interest
+- Paper about Generational Garbage Collectors:
+- Book about High-Performance Garbage Collectors (complementary to this course):
 
 ### Practice
-Then, we can run some programs created on the previous lecture:
-- Are them "memory-starved" applications? (Check the GC overhead!)
-  - `If yes` -> How do you know? Any idea about where could be the issue?
-  - `else`  -> Make sense with the program behaviour? Can you modify it to increase the memory usage?
+- Execute programs to stress the Garbage Collectors in different ways.
+- Validate the expected behaviour using the VM statistics.
