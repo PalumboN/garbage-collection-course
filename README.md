@@ -3,8 +3,18 @@
 Course about Garbage Collection using the Pharo for CERCIRAS - dicated at Riga '23.
 
 ## Outline
+
 Automatic memory management is often supported by Garbage Collectors (GC). A GC deals with different programs that manipulate different data. This data must be allocated in the memory (heap), accessible when the application uses it and will be freed when is not necessary anymore (allocation pattern). GCs try to predict the allocation pattern of running applications for better performance. So, they implement parametric algorithms to adapt their complex behaviour to each specific application. There are reports about how garbage collection impacts application performance if not tuned properly, but most developers do not know how the GC works with their programs.
 In this lecture series, we introduce how Garbage Collectors work in the context of object-oriented programs. We use the Pharo language to profile the program allocations and analyse profile data. We will analyse applications with different allocation patterns and identify possible causes of performance degradation (pathological cases). We use this information for tuning GC parameters and improving the application’s performance.
+
+## Material
+
+You can 
+- clone this repository if you know git
+- or download all the material by doing [click here]([url](https://www.dropbox.com/scl/fi/u9lxkmgmyl10vtpjaqzm8/garbage-collection-course.zip?rlkey=tj6mz27h03taau9m44iiuezm7&dl=0)).
+
+This course is self-contained. All the material to follow the course is here, except the links.
+You will only need internet during the software instalation at the beggining of the course and for the last experience.
 
 ## Structure
 
